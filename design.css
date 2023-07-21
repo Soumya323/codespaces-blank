@@ -1,48 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+:root {
+  --accent-color: #d8ff77;
+  --deep-pink: #ff52a2;
+}
+
 body {
-    background-color: blueviolet;
-    font-family: 'Montserrat', sans-serif;
+  background-color: pink;
+  font-family: "Montserrat", sans-serif;
 }
 
 #root {
-    background-color: pink;
-    display: flex;
-    /* align-content: center; */
-    flex-direction: column;
-    max-width: 50%;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    border-radius: 1rem;
-    /* align-items: center; */
+  background-color: var(--deep-pink);
+  display: flex;
+  /* align-content: center; */
+  flex-direction: column;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  border-radius: 1rem;
+  /* align-items: center; */
 }
 
 #app-title {
-    color: white;
-    font-size: 2rem;
+  color: var(--accent-color);
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 #date-input {
-    width: 100px;
-    margin: auto;
+  width: 120px;
+  margin: auto;
+  height: 1.5rem;
+  padding: 5px;
+  border: 2px solid var(--deep-pink);
+  border-radius: 0.5rem;
 }
 
 #lucky-input {
-    width: 100px;
-    margin: auto;
-    text-align: center;
-    font-size: 1.25rem;
-    height: 1.5rem;
-    border-radius: 0.25rem;
+  width: 80px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.25rem;
+  height: 1.75rem;
+  border: 2px solid var(--deep-pink);
+  border-radius: 0.5rem;
 }
 
 #check-button {
-    margin: 3rem auto;
-    width: 15rem;
-    height: 2.25rem;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 0.25rem;
-    border-width: solid greyblack 1px;
+  margin: 3rem auto;
+  width: 180px;
+  height: 2.25rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.25rem;
+  border: 2px solid grey;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  height: 2rem;
+}
+
+footer ul {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer img {
+  max-width: 2rem;
+  max-height: 2rem;
+  color: yellow;
 }
